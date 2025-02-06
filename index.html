@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-text">Tech Pulse</div>
+    </div>
+    <!-- Hearder start -->
+    <header class="header">
+        <div class="header-left">
+            <a>Tech Pulse</a>
+        </div>
+        <div class="container-1">
+            <nav>
+                <ul id="sidemenu" class="sidemenu">
+                    <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="navbar">
+                    <li class="hideonmobile"><a href="#home">Home</a></li>
+                    <li class="hideonmobile"><a href="#about">About</a></li>
+                    <li class="hideonmobile"><a href="#services">Services</a></li>
+                    <li class="hideonmobile"><a href="#skill">Skill</a></li>
+                    <li class="hideonmobile"><a href="#portfolio">Portfolio</a></li>
+                    <li class="hideonmobile"><a href="#contact">Contact</a></li>
+                    <a href="#" onclick="showSideBar()" class="open"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <!-- section 1 start-->
+    <section class="home">
+        <div class="home">
+            <div class="home-left">
+                <h3 class="heading-1">Hi, It's me</h3>
+                <h1 class="heading-2">Javed Ali</h1>
+                <h3 class="heading-3">And I'm a <span class="heading-1">Frontend Developer</span></h3>
+                <p class="details">I specialize in building responsive, user-friendly web applications with modern tools
+                    like React and CSS.<br>
+                    Hire me for my attention to detail, innovative problem-solving, and commitment to delivering
+                    exceptional
+                    user experiences.</p>
+                <a href="https://www.facebook.com/javedraj.balti"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/javed-ali-b8608821b/
+                "><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/javed-ali-baltistani?tab=overview&from=2025-01-01&to=2025-01-31"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/javed_ali4462?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+                <br>
+                <a href="images/My Resume.pdf" download class="btn">Download Cv</a>
+            </div>
+            <div class="home-right">
+                <img src="images/Banner Image.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- section 1 end-->
+
+    <!-- section 2 start -->
+    <section class="about">
+        <h1 class="about-1">About<span class="about-2"> Me</span></h1>
+        <div id="about">
+            <div class="about-left">
+                <img src="images/pexels-simon-robben-55958-614810.jpg" alt="">
+            </div>
+            <div class="about-right">
+                <h2 class="heading-4">Frontend Developer &
+                    <br>UI/UX Design
+                </h2>
+                <p class="about-details">Hello! I'm Javed Ali , a dedicated computer science student with a
+                    passion
+                    for technology and a keen interest in frontend web development , and graphic
+                    design .
+                </p>
+                <p class="about-details">Feel free to get in touch with me through email or phone . I am excited about
+                    the
+                    opportunities that lie ahead and look forward to making a meaningful impact in the field of
+                    computer science.
+                </p>
+                <button class="read-more" onclick="toggleDetails()">Read More</button>
+                <p class="about-details-2">Currently, I am pursuing my degree at NFC Institute of Engineering and
+                    Technology,
+                    where I am honing my skills in various programming languages, including C,
+                    Python and Object-Oriented Programming (OOP).</p>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 end -->
+
+    <!-- section-3 start -->
+    <section class="services">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span class="sub-title-2">Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web creative design refers to the practice of crafting visually compelling and user-centric
+                            websites, integrating aesthetics, functionality, and technical performance. It involves a
+                            mix of
+                            artistic creativity, design theory, and technical know-how,</p>
+                        <button class="learn-more-1" onclick="hideDetails1() ">Learn More</button>
+                        <p class="services-details-1">to create websites that are both visually appealing and easy to
+                            navigate.
+                            Web creative design is crucial for establishing a
+                            brand’s online presence, improving user experience, and driving conversions.</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UI (User Interface) and UX (User Experience) Design are integral components of creating
+                            digital
+                            products that are both visually appealing and highly functional. While they are closely
+                            related,
+                            they focus on different aspects of the user’s interaction with</p>
+                        <button class="learn-more-2" onclick="hideDetails2() ">Learn More</button>
+                        <p class="services-details-2"> a product. Together, UI and UX
+                            design play a pivotal role in shaping how users perceive and engage with websites, apps, and
+                            other digital platforms.</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <i class='fab fa-google-play'></i>
+                        <h2>App Design</h2>
+                        <p>App design is the process of creating visually appealing and user-friendly mobile
+                            applications.
+                            It involves both User Interface (UI) and User Experience (UX) design principles to build
+                            apps
+                            that are not only beautiful but also intuitive and easy to navigate.</p>
+                        <button class="learn-more-3" onclick="hideDetails3() ">Learn More</button>
+                        <p class="services-details-3"> The ultimate goal of app
+                            design is to deliver a seamless, enjoyable experience that fulfills the needs of its users
+                            while
+                            supporting the business objectives of the app creators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-3 end -->
+
+    <!-- section-4 start -->
+    <section class="skill" id="skill">
+        <div class="skills-container">
+            <h2 class="skill-heading">My <span style="color: #F86F03;">Skills</span></h2>
+            <div id="skills-list"></div> 
+        </div>
+    </section>
+    <!-- section-4 end -->
+
+    <!-- section-5 start -->
+    <section class="portfolio">
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>the app connected you to the talented peoplearound the world.</p>
+                            <a href="#">
+                                <i class="fa fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>the app connected you to the talented peoplearound the world.</p>
+                            <a href="#">
+                                <i class="fa fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>E-commerce App</h3>
+                            <p>the app connected you to the talented peoplearound the world.</p>
+                            <a href="#">
+                                <i class="fa fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </section>
+    <!-- section-5 end -->
+
+    <!-- section-6 start -->
+    <section id="contact-section" class="contact">
+        <h1 class="contact-title">Contact Me</h1>
+        <div class="contacts">
+            <div id="contact-left" class="contact-left">
+                <p>javed4462ali@gmail.com<a href="https://mail.google.com/"><i class="fa fa-envelope"></i></a></p>
+                <p>dumsumi123@outlook.com<a href="https://outlook.live.com/"><i class="fa fa-envelope"></i></a></p>
+                <p>03555929223 <a href=""><i class="fas fa-phone"></i></a><a href="https://web.whatsapp.com/"><i
+                            class="fab fa-whatsapp"></i></a></p>
+                <a href="images/My Resume.pdf" download class="btn">Download Cv</a>
+            </div>
+            <div id="contact-right" class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <!-- Form Fields -->
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <input type="tel" id="phone" name="Phone no" placeholder="Enter your phone Number" required>
+                    <input type="text" name="Subject" placeholder="Enter your subject" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" required"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-6 end -->
+
+    <!-- Footer Start -->
+    <footer>
+        <p class="end">Copywrite © 2024 Tech Pulse. All rights reserved.</p>
+    </footer>
+    <!-- footer ends -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/092dcb864a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
