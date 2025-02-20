@@ -128,3 +128,14 @@ function hideSideBar() {
 window.onload = function () {
   document.getElementById("loader").style.display = "none";
 }
+
+function sendMail(){
+  let params={
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("text").value,
+    sumry: document.getElementById("msg").value}
+
+    emailjs.send("service_37kc3qx", "template_jxih8zk", params).then(alert("Email sent successfully!"));
+}

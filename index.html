@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "hIg54s-AlHdEje7Q2",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -15,7 +24,7 @@
     <!-- Hearder start -->
     <header class="header">
         <div class="header-left">
-            <a>Tech Pulse</a>
+            <a>Balti</a>
         </div>
         <div class="container-1">
             <nav>
@@ -65,8 +74,10 @@
                 <a href="https://www.facebook.com/javedraj.balti"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/in/javed-ali-b8608821b/
                 "><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/javed-ali-baltistani?tab=overview&from=2025-01-01&to=2025-01-31"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/javed_ali4462?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/javed-ali-baltistani?tab=overview&from=2025-01-01&to=2025-01-31"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/javed_ali4462?igsh=YzljYTk1ODg3Zg=="><i
+                        class="fa-brands fa-instagram"></i></a>
                 <br>
                 <a href="images/My Resume.pdf" download class="btn">Download Cv</a>
             </div>
@@ -166,7 +177,7 @@
     <section class="skill" id="skill">
         <div class="skills-container">
             <h2 class="skill-heading">My <span style="color: #F86F03;">Skills</span></h2>
-            <div id="skills-list"></div> 
+            <div id="skills-list"></div>
         </div>
     </section>
     <!-- section-4 end -->
@@ -228,12 +239,12 @@
             <div id="contact-right" class="contact-right">
                 <form name="submit-to-google-sheet">
                     <!-- Form Fields -->
-                    <input type="text" name="Name" placeholder="Enter your name" required>
-                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
                     <input type="tel" id="phone" name="Phone no" placeholder="Enter your phone Number" required>
-                    <input type="text" name="Subject" placeholder="Enter your subject" required>
-                    <textarea name="Message" rows="6" placeholder="Your message" required"></textarea>
-                    <button type="submit" class="btn">Send</button>
+                    <input type="text" id="text" name="Subject" placeholder="Enter your subject" required>
+                    <textarea name="Message" id="msg" rows="6" placeholder="Your message" required"></textarea>
+                    <button type="submit" onclick="sendMail()" class="btn">Send</button>
                 </form>
             </div>
         </div>
