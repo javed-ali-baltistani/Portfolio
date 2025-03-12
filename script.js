@@ -1,18 +1,11 @@
 // ----------------------- Form submission for Google Sheets -----------------------------
 const scriptURL = "https://script.google.com/macros/s/AKfycbw9md7GwOQDD8soHe1rfN73ELmxV9CMjqI_L2mxWJGyGkkqe4wXCTqhDJGT4035e7k/exec";
-const form = document.forms["submit-to-google-sheet"];
+const form = document.forms["contact-form"];
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      alert("Message sent successfully!");
-      form.reset();
-    })
-    .catch((error) => {
-      alert("An error occurred. Please try again.");
-    });
+  sendMail(); // Call sendMail function
 });
 
 
@@ -139,5 +132,13 @@ function sendMail(){
     message: document.getElementById("text").value,
     sumry: document.getElementById("msg").value}
 
-    emailjs.send("service_37kc3qx", "template_jxih8zk", params).then(alert("Email sent successfully!"));
+    emailjs.send("service_37kc3qx", "template_jxih8zk", params).then((response) => {
+      alert("Email sent successfully!");
+      form.reset();
+    })
+    .catch((error) => {
+      alert("An error occurred. Please try again.");
+    });
+
+
 }
