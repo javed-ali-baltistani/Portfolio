@@ -22,6 +22,8 @@ const skills = [
   { name: "CSS - 3", percentage: 75 },
   { name: "Tailwind", percentage: 50 },
   { name: "JavaScript", percentage: 50 },
+   {name: "React", percentage: 60 },
+  
 ];
 
 // Function to create skill bars dynamically
